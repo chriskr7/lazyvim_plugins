@@ -1,3 +1,3 @@
 ### Chris LazyVim PlugIns Config
 ----
-Backup for my layvim settings
+Backup for my LazyVim settings
