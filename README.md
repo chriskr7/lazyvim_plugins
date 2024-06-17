@@ -1,3 +1,7 @@
-### Chris LazyVim PlugIns Config
+# lazyvim_plugins 
+
+Chris's LazyVim PlugIns Config
+
 ----
-Backup for my LazyVim settings
+
+This is backup repository for Chris's LazyVim settings.
