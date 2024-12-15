@@ -96,6 +96,18 @@ return {
                 arrayIndex = "Disable",
               },
             },
+            ["rust-analyzer"] = {
+              procMacro = {
+                ignored = {
+                  leptos_macro = {
+                    "server",
+                  },
+                },
+                checkOnSave = {
+                  command = "clippy",
+                },
+              },
+            },
           },
         },
       },
@@ -126,7 +138,9 @@ return {
     LazyVim.lsp.setup()
     LazyVim.lsp.on_dynamic_capability(require("lazyvim.plugins.lsp.keymaps").on_attach)
 
-    LazyVim.lsp.words.setup(opts.document_highlight)
+    -- deprecated
+    -- TODO: replace with Snacks.words later
+    -- LazyVim.lsp.words.setup(opts.document_highlight)
 
     -- diagnostics signs
     if vim.fn.has("nvim-0.10.0") == 0 then
